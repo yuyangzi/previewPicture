@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>preview picture</title>
+    <link rel="stylesheet" href="css/sideber.css">
+</head>
+<body>
+    <div class="sideber">
+        <!--幻灯片区域-->
+        <!--0. 修改 VIEW->Template(关键字替换),增加template ID-->
+        <div class="main" id="template_main">
+            <div class="main-i" id="main_i_{{index}}">
+                <div class="caption">
+                    <h2>{{h2}}</h2>
+                    <h3>{{h3}}</h3>
+                </div>
+                <img src="img/{{index}}.jpg" alt="">
+            </div>
+        </div>
+        <!--控制栏-->
+        <div class="control" id="template_control">
+            <a href="#" class="control-i" id="control_i_{{index}}"><img src="img/{{index}}.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <script src="js/sideber.js"></script>
+</body>
+</html>
